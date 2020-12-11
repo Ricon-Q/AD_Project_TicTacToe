@@ -112,8 +112,6 @@ class WindowClass(QMainWindow, form_class) :
         self.Game.hide()
         self.Result.show()
 
-        # self.Result.exit.hide()
-
         if(self.winner == "X"):
             self.winText.setText(self.player1name + " WIN!")
         elif(self.winner == "O"):
@@ -121,31 +119,9 @@ class WindowClass(QMainWindow, form_class) :
         elif(self.winner == "draw"):
             self.winText.setText("DRAW!")
 
-        # self.again.clicked.connect(self.resultfunc)
         self.exit.clicked.connect(self.resultfunc)
     def resultfunc(self):
-        # if(self.sender() == self.again):
-        #     self.Main.show()
-        #     self.Mode.hide()
-        #     self.comVsplay.hide()
-        #     self.Game.hide()
-        #     self.Result.hide()
-        #     self.btn_array = [self.btn1, self.btn2, self.btn3,
-        #                       self.btn4, self.btn5, self.btn6,
-        #                       self.btn7, self.btn8, self.btn9]
-        #     for i in range(9):
-        #         self.btn_array[i].setText("-")
-        #
-        #     # self.btn_chk = {self.btn1: '1', self.btn2: '2', self.btn3: '3',
-        #     #                 self.btn4: '4', self.btn5: '5', self.btn6: '6',
-        #     #                 self.btn7: '7', self.btn8: '8', self.btn9: '9'}
-        #     # self.btn_final = [self.btn_chk[self.btn1], self.btn_chk[self.btn2], self.btn_chk[self.btn3],
-        #     #                   self.btn_chk[self.btn4], self.btn_chk[self.btn5], self.btn_chk[self.btn6],
-        #     #                   self.btn_chk[self.btn7], self.btn_chk[self.btn8], self.btn_chk[self.btn9]]
-        #
-
-        if(self.sender() == self.exit):
-            sys.exit()
+         sys.exit()
 
 if __name__ == "__main__" :
     #QApplication : 프로그램을 실행시켜주는 클래스
