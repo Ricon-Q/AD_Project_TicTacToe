@@ -510,30 +510,11 @@
       <string>Player1 WIN!</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="again">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>370</y>
-       <width>151</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>210 썬플라워 B</family>
-       <pointsize>31</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Again</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="exit">
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>480</y>
+       <y>400</y>
        <width>151</width>
        <height>71</height>
       </rect>
