@@ -50,16 +50,9 @@ class WindowClass(QMainWindow, form_class) :
         self.player1name = self.PlayLabel1.text()
         self.P1.setText(self.player1name)
 
-        self.btn1.clicked.connect(self.btnclick)
-        self.btn2.clicked.connect(self.btnclick)
-        self.btn3.clicked.connect(self.btnclick)
-        self.btn4.clicked.connect(self.btnclick)
-        self.btn5.clicked.connect(self.btnclick)
-        self.btn6.clicked.connect(self.btnclick)
-        self.btn7.clicked.connect(self.btnclick)
-        self.btn8.clicked.connect(self.btnclick)
-        self.btn9.clicked.connect(self.btnclick)
         self.btn_array = [self.btn1, self.btn2, self.btn3, self.btn4, self.btn5, self.btn6, self.btn7, self.btn8, self.btn9]
+        for i in range(9):
+            self.btn_array[i].clicked.connect(self.btnclick)
         self.btn_chk = {self.btn1 : '1', self.btn2 : '2', self.btn3 : '3', self.btn4 : '4', self.btn5 : '5', self.btn6 : '6', self.btn7 : '7', self.btn8: '8',self.btn9: '9'}
 
     def btnclick(self):
