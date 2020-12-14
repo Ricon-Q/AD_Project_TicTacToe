@@ -56,6 +56,7 @@ class WindowClass(QMainWindow, form_class) :
         self.btn_chk = {self.btn1 : '1', self.btn2 : '2', self.btn3 : '3', self.btn4 : '4', self.btn5 : '5', self.btn6 : '6', self.btn7 : '7', self.btn8: '8',self.btn9: '9'}
 
     def btnclick(self):
+
         self.sender().setText("X")
         self.btn_chk[self.sender()] = "X"
         self.btn_array.remove(self.sender())
